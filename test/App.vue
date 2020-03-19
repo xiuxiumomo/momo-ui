@@ -1,12 +1,17 @@
 <template>
   <div id='app'>
-    111
+    <all-button></all-button>
+    <momo-button>111111</momo-button>
   </div>
 </template>
 
 <script>
+import allButton from './TestButton'
 export default {
   name: 'App',
+  components: {
+      allButton
+  },
   data() {
     return {};
   }
@@ -16,10 +21,6 @@ export default {
 <style lang='scss'>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  
 }
 </style>
