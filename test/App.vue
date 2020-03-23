@@ -1,16 +1,20 @@
 <template>
-  <div id='app'>
-    <all-button></all-button>
-    <momo-button>111111</momo-button>
+  <div id="app">
+    <momo-button type="default">111111</momo-button>
+    <momo-button type="primary">111111</momo-button>
+    <momo-button type="success">111111</momo-button>
+    <momo-button type="warning">111111</momo-button>
+    <momo-button type="danger">111111</momo-button>
+    <momo-button type="info" round>111111</momo-button>
   </div>
 </template>
 
 <script>
-import allButton from './TestButton'
+import allButton from "./TestButton";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-      allButton
+    allButton
   },
   data() {
     return {};
@@ -18,9 +22,8 @@ export default {
 };
 </script>
 
-<style lang='scss'>
+<style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  
 }
 </style>

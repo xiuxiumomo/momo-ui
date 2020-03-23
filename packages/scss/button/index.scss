@@ -1,0 +1,81 @@
+.momo-button {
+    display: inline-block;
+    line-height: 1;
+    white-space: nowrap;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #dcdfe6;
+    color: #606266;
+    -webkit-appearance: none;
+    text-align: center;
+    box-sizing: border-box;
+    outline: none;
+    margin: 0;
+    transition: 0.1s;
+    font-weight: 500;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    padding: 12px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    &.is-round {
+        border-radius: 20px;
+        padding: 12px 23px;
+    }
+    &.momo-button--primary {
+        background-color: $primary;
+        border-color: $primary;
+        color: #fff;
+        &.momo-button--primary:focus,
+        &.momo-button--primary:hover {
+            background: $primary_hover;
+            border-color: $primary_hover;
+            color: #fff;
+        }
+    }
+    &.momo-button--success {
+        background-color: $success;
+        border-color: $success;
+        color: #fff;
+        &.momo-button--success:focus,
+        &.momo-button--success:hover {
+            background: $success_hover;
+            border-color: $success_hover;
+            color: #fff;
+        }
+    }
+    &.momo-button--warning {
+        background-color: $warning;
+        border-color: $warning;
+        color: #fff;
+        &.momo-button--warning:focus,
+        &.momo-button--warning:hover {
+            background: $warning_hover;
+            border-color: $warning_hover;
+            color: #fff;
+        }
+    }
+    &.momo-button--danger {
+        background-color: $danger;
+        border-color: $danger;
+        color: #fff;
+        &.momo-button--danger:focus,
+        &.momo-button--danger:hover {
+            background: $danger_hover;
+            border-color: $danger_hover;
+            color: #fff;
+        }
+    }
+    &.momo-button--info {
+        background-color: $info;
+        border-color: $info;
+        color: #fff;
+        &.momo-button--info:focus,
+        &.momo-button--info:hover {
+            background: $info_hover;
+            border-color: $info_hover;
+            color: #fff;
+        }
+    }
+}

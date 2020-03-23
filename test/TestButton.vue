@@ -1,6 +1,6 @@
 <template>
   <div>
-    <momo-button>1243</momo-button>
+    <momo-button type="primary">1243</momo-button>
   </div>
 </template>
 <script>

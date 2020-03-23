@@ -1,40 +1,34 @@
 <template>
-  <button class="momo-button" @click="handleClick">
-    <slot></slot>
+  <button
+    class="momo-button"
+    :class="[`momo-button--${type}`,{'is-round': round}]"
+    @click="handleClick"
+  >
+    <span>
+      <slot></slot>
+    </span>
   </button>
 </template>
 <script>
 export default {
   name: "MomoButton",
+  props: {
+    type: {
+      default: "default", //primary success warning/danger /info /text
+      type: String
+    },
+    round: {
+      default: false,
+      type: Boolean
+    }
+  },
   methods: {
     handleClick(e) {
-      console.log('点点击点击了~')
       this.$emit("click", e);
     }
   }
 };
 </script>
 <style lang="scss">
-.momo-button {
-  display: inline-block;
-  line-height: 1;
-  white-space: nowrap;
-  cursor: pointer;
-  background: #fff;
-  border: 1px solid #dcdfe6;
-  color: #606266;
-  -webkit-appearance: none;
-  text-align: center;
-  box-sizing: border-box;
-  outline: none;
-  margin: 0;
-  transition: 0.1s;
-  font-weight: 500;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  padding: 12px 20px;
-  font-size: 14px;
-  border-radius: 4px;
-}
+
 </style>
