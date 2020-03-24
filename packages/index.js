@@ -1,7 +1,9 @@
 import Button from './button'
+import toolTip from './button'
 
 const components = [
-    Button
+    Button,
+    toolTip
 ]
 //创建install方法注册组建
 const install = function (Vue) {
